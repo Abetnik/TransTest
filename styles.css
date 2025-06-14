@@ -34,6 +34,7 @@ p {
   line-height: 0.8;
 }
 
+
 section {
   position: relative;
   width: 100vw;
@@ -41,6 +42,18 @@ section {
   background-color: #111117;
   text-align: center;
   overflow: hidden;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
 }
 
 .hero-img-container,
@@ -139,7 +152,8 @@ section {
   }
 }
 
-.enter-button {
+.enter-button,
+.back-button {
   position: absolute;
   bottom: 10%;
   left: 50%;
@@ -154,6 +168,7 @@ section {
   transition: background-color 0.3s ease;
 }
 
-.enter-button:hover {
+.enter-button:hover,
+.back-button:hover {
   background-color: #c25350;
 }
