@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fadeOverlay = document.querySelector(".fade-overlay");
   const svgOverlay = document.querySelector(".overlay");
   const overlayCopy = document.querySelector("h1");
+  const startButton = document.querySelector(".enter-button");
 
   const initialOverlayScale = 500;
   const logoContainer = document.querySelector(".logo-container");
@@ -152,6 +153,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   setupScrollTrigger();
+
+  startButton.addEventListener("click", () => {
+    lenis.scrollTo(document.querySelector(".outro"), {
+      duration: 3,
+      lock: true,
+    });
+  });
 
   window.addEventListener("resize", () => {
     updateLogoMask();
